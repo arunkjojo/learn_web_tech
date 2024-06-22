@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Home</title>
+    <title>Portfolio - Contact</title>
   </head>
   <body>
     <header>
@@ -17,13 +17,22 @@
     </header>
     <main>
       <section>
-        <h1>Welcome to My Portfolio</h1>
-        <img src="/assets/profile.jpg" alt="Profile Image" />
-        <p>
-          Hi, I'm Arun Jojo, a Software Engineer. Welcome to my online
-          portfolio!
-        </p>
-        <button>Contact us</button>
+        <h1>Contact Me</h1>
+        <img src="images/contact.jpg" alt="Contact Image" />
+        <form
+          action="mailto:your.email@example.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea
+          ><br />
+          <input type="submit" value="Send" />
+        </form>
       </section>
     </main>
     <footer>
